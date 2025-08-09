@@ -1,0 +1,23 @@
+/* Style.css for Assignment2B */
+
+body {
+  background-color: #e6f2e6; /* very light green */
+}
+
+.card {
+  border-radius: 12px;
+}
+
+.btn-success {
+  background-color: #2f7a2f;
+  border-color: #2f7a2f;
+}
+
+.btn-success:hover {
+  background-color: #265926;
+  border-color: #265926;
+}
+
+.text-success {
+  color: #2f7a2f !important;
+}

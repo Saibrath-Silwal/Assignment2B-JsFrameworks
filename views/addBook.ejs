@@ -1,0 +1,41 @@
+<%- include('partials/header', { title: 'Add New Book' }) %>
+
+<div class="container mt-4">
+  <h2>Add New Book</h2>
+
+  <form action="/books/add" method="POST">
+    <div class="mb-3">
+      <label for="title" class="form-label">Title</label>
+      <input name="title" id="title" type="text" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="author" class="form-label">Author</label>
+      <input name="author" id="author" type="text" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <label for="genre" class="form-label">Genre</label>
+      <input name="genre" id="genre" type="text" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <label for="thumbnail" class="form-label">Thumbnail URL</label>
+      <input name="thumbnail" id="thumbnail" type="url" class="form-control" placeholder="http://example.com/image.jpg">
+    </div>
+
+    <div class="mb-3">
+      <label for="status" class="form-label">Status</label>
+      <select name="status" id="status" class="form-select">
+        <option value="planned" selected>Planned</option>
+        <option value="reading">Reading</option>
+        <option value="read">Read</option>
+      </select>
+    </div>
+
+    <button type="submit" class="btn btn-success">Add Book</button>
+    <a href="/books" class="btn btn-secondary ms-2">Cancel</a>
+  </form>
+</div>
+
+<%- include('partials/footer') %>

@@ -13,7 +13,7 @@ const mongoose = require("mongoose");
 
 const authRouter = require("./routes/auth");
 const booksRouter = require("./routes/books");
-const User = require("./models/User");
+const User = require("./models/user");
 
 const app = express();
 
